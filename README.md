@@ -4,8 +4,7 @@ Azure OpenAI API with Streamlit
 
 # 1. Single Database table records , it is communicating.
 
-
-#Prerequisites
+# Prerequisites
 
 1. Python 3.6 or above download
 2. Virtual Environment (recommended)
