@@ -18,7 +18,7 @@ import os
 
 load_dotenv()
 
-
+#  azure connection
 openai.api_type = "azure"
 openai.api_version = "2023-05-15" 
 openai.api_key = "996d1769a4b14d96bd2ba7ec07f650f9"
