@@ -6,6 +6,7 @@ username = 'root'
 password = 'root'
 chunk_size = 10000
 
+# sql connection
 
 def get_db_connection():
     connection = mysql.connector.connect(host=server_name,
