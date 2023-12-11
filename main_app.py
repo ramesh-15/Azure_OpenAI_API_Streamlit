@@ -5,6 +5,7 @@ from prompt import SYSTEM_MESSAGE
 from azure_openai import get_completion
 import json
 
+# main file
 
 def query_database(query, conn):
     """ Run SQL query and return results in a dataframe """
