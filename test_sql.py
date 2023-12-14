@@ -1,7 +1,7 @@
 import mysql.connector
 
 server_name = 'localhost'
-database_name = 'openai'
+database_name = 'sakila'
 username = 'root'
 password = 'root'
 chunk_size = 10000
@@ -38,7 +38,7 @@ def get_tables_db_schema(cursor, tables):
     db_schema = {}
 
     for table in tables:
-        query = f"SHOW FULL COLUMNS FROM openai.{table};"
+        query = f"SHOW FULL COLUMNS FROM {database_name}.{table};"
         cursor.execute(query)
         columns = cursor.fetchall()
 
