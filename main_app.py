@@ -46,7 +46,7 @@ user_message = st.text_input("Enter your question:")
 if user_message:
     
     # Format the system message with the schema
-    formatted_system_message = SYSTEM_MESSAGE.format(schema_1=schemas['actor'], table_1="actor")
+    formatted_system_message = SYSTEM_MESSAGE.format(schema_1=schemas, table_1=tables)
     # print('format:',formatted_system_message)
     response = get_completion(formatted_system_message, user_message)
     print('response:',response)
